@@ -570,7 +570,7 @@ orac_OSF : $(OBJ) $(OBJREC) $(DUMP) $(OBJPRE) \
 	$(OBJPRE_NKL) $(OBJPRE_F90) $(OBJLIB) $(EIGRS) $(OBJTIM)
 	$(LD) -o orac_OSF $(OBJ) $(OBJREC) $(DUMP) $(OBJPRE) \
 	$(OBJPRE_NKL) $(OBJPRE_F90) $(OBJLIB) $(EIGRS) $(OBJTIM)\
-	-L/usr/local/assist/lib -L$(OTHERS_LIB) -L$(FFTW_LIB) $(LLFLAGS) -lmpi
+	-L/usr/local/assist/lib -L$(OTHER_LIBS) -L$(FFTW_LIB) $(LLFLAGS) -lmpi
 
 #==========================================================================
 # Compile and load ORAC on OSF   
@@ -591,7 +591,7 @@ orac_PGI : $(OBJ) $(OBJREC) $(DUMP) $(OBJPRE) $(OBJPRE_NKL)\
 	$(OBJPRE_F90) $(OBJLIB) $(EIGRS) $(OBJTIM)
 	$(LD) -Mvect -Mipa=fast -fastsse  -o orac_PGI $(OBJ) $(OBJREC) $(DUMP) $(OBJPRE) $(OBJPRE_NKL)\
 	$(OBJPRE_F90) $(OBJLIB) $(EIGRS) $(OBJTIM)\
-	-L$(FFTW_LIB) -L$(OTHERS_LIB) $(LLFLAGS) -lm
+	-L$(FFTW_LIB) -L$(OTHER_LIBS) $(LLFLAGS) -lm
 
 
 #==========================================================================
@@ -613,7 +613,7 @@ orac_IFC : $(OBJ) $(OBJREC) $(DUMP) $(OBJPRE) $(OBJPRE_NKL)\
 	$(OBJPRE_F90) $(OBJLIB) $(EIGRS) $(OBJTIM)
 	$(LD) -o orac_IFC $(OBJ) $(OBJREC) $(DUMP) $(OBJPRE) $(OBJPRE_NKL)\
 	$(OBJPRE_F90) $(OBJLIB) $(EIGRS) $(OBJTIM)\
-	-L$(FFTW_LIB) -L$(OTHERS_LIB) $(LLFLAGS) -lm
+	-L$(FFTW_LIB) -L$(OTHER_LIBS) $(LLFLAGS) -lm
 
 
 #==========================================================================
@@ -655,7 +655,7 @@ orac_XLF: $(OBJ) $(OBJREC) $(DUMP) $(OBJPRE) $(OBJPRE_NKL)\
 	$(LD) -O5 -qnosave -qhot -qipa -o orac_XLF $(OBJ) $(OBJREC)\
 	$(DUMP) $(OBJPRE) $(OBJPRE_NKL)\
 	$(OBJPRE_F90) $(OBJLIB) $(EIGRS) $(OBJTIM)\
-	-L$(FFTW_LIB) -L$(OTHERS_LIB) $(LLFLAGS)
+	-L$(FFTW_LIB) -L$(OTHER_LIBS) $(LLFLAGS)
 
 #==========================================================================
 # Compile and load ORAC on G95 compiler
@@ -676,7 +676,7 @@ orac_G95: $(OBJ) $(OBJREC) $(DUMP) $(OBJPRE) $(OBJPRE_NKL)\
 	$(LD) -O3 -o orac_G95 $(OBJ) $(OBJREC)\
 	$(DUMP) $(OBJPRE) $(OBJPRE_NKL)\
 	$(OBJPRE_F90) $(OBJLIB) $(EIGRS) $(OBJTIM)\
-	-L$(FFTW_LIB) -L$(OTHERS_LIB) $(LLFLAGS)
+	-L$(FFTW_LIB) -L$(OTHER_LIBS) $(LLFLAGS)
 #==========================================================================
 # Clean Objects
 #==========================================================================
