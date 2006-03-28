@@ -170,7 +170,7 @@
 *                                                                      *
 *================== Description of the keywords end ===================*
 *                                                                      *
-*     $Id: crdrtf.f,v 1.1 2005/03/06 22:26:44 mmarchi Exp $
+*     $Id: crdrtf.f,v 1.2 2006/03/28 13:37:49 mmarchi Exp $
 *                                                                      *
 *     Written by Massimo Marchi CE Saclay 1994                         *
 *     Updated by P Procacci at CECAM Jan 1997                          *
@@ -356,6 +356,11 @@ c--         Topology file being read in ...
                STOP
             END IF
          END IF
+
+c=====Command OLD_TPG =====================================================
+
+      ELSE IF(strngs(1).EQ. 'OLD_TPG') THEN
+         old_tpg=.TRUE.
 
 c=====Command READ_PRM_ASCII============================================
 c---- Read potential parameters from a text file ----------------------
