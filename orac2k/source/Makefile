@@ -13,6 +13,7 @@ LIB = nolib
 CURDIR = `pwd`
 DIST_DIR = tmp_dir/orac/source
 LIBRARIES = NONE
+OTHER_LIBS = /dev/null
 
 #==========================================================================
 # Define default rules
