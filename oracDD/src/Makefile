@@ -1,7 +1,10 @@
 # Makefile for 
 # Copyright (C) 2006 Massimo Marchi <marchi@job.saclay.cea.fr>
-# $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/orac2k/Repository/oracDD/src/Makefile,v 1.3 2007/01/12 09:59:49 mmarchi Exp $
+# $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/orac2k/Repository/oracDD/src/Makefile,v 1.4 2007/01/12 19:41:26 mmarchi Exp $
 # $Log: Makefile,v $
+# Revision 1.4  2007/01/12 19:41:26  mmarchi
+# *** empty log message ***
+#
 # Revision 1.3  2007/01/12 09:59:49  mmarchi
 # *** empty log message ***
 #
@@ -89,7 +92,8 @@ OBJS = Constants.o Types.o Parameters_Globals.o Errors.o flib.o Node.o Strings.o
 	Tree.o Inputs.o Grammars.o Myparse.o Keyword.o Resid.o Parameters.o \
 	Numerics.o Units.o PDB.o Setups.o Process.o Hash_Tops.o Tops.o SecondarySeq.o\
 	IndPatch.o AtomCnt.o IndSequence.o ResidueTpg.o  SystemTpg.o TypesPrm.o \
-	SystemPrm.o LennardJones.o PrmUtilities.o BondedPrm.o oracDD.o 
+	SystemPrm.o LennardJones.o PrmUtilities.o BondedPrm.o SimulationBox.o\
+	ReadStore.o oracDD.o 
 
 SRC = $(patsubst %.o, %.f90, $(OBJS)) 
 
