@@ -21,8 +21,11 @@
 # ------------------------------------------------------------------/
 # Makefile for 
 # Copyright (C) 2006 Massimo Marchi <marchi@job.saclay.cea.fr>
-# $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/orac2k/Repository/oracDD/src/Makefile,v 1.8 2007/01/17 09:50:42 mmarchi Exp $
+# $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/orac2k/Repository/oracDD/src/Makefile,v 1.9 2007/01/17 16:57:32 mmarchi Exp $
 # $Log: Makefile,v $
+# Revision 1.9  2007/01/17 16:57:32  mmarchi
+# *** empty log message ***
+#
 # Revision 1.8  2007/01/17 09:50:42  mmarchi
 # *** empty log message ***
 #
@@ -127,7 +130,7 @@ OBJS = Constants.o Types.o Parameters_Globals.o Errors.o flib.o Node.o Strings.o
 	Numerics.o Units.o PDB.o Setups.o Process.o Hash_Tops.o Tops.o SecondarySeq.o\
 	IndPatch.o AtomCnt.o IndSequence.o ResidueTpg.o  SystemTpg.o TypesPrm.o \
 	SystemPrm.o LennardJones.o PrmUtilities.o BondedPrm.o SimulationBox.o\
-	ReadStore.o AddHydrogens_.o oracDD.o 
+	ReadStore.o AddHydrogens_.o AtomBox.o oracDD.o 
 
 OBJS_f = AddH.o duni.o
 
