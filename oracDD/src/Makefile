@@ -21,8 +21,11 @@
 # ------------------------------------------------------------------/
 # Makefile for 
 # Copyright (C) 2006 Massimo Marchi <marchi@job.saclay.cea.fr>
-# $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/orac2k/Repository/oracDD/src/Makefile,v 1.7 2007/01/16 15:06:01 mmarchi Exp $
+# $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/orac2k/Repository/oracDD/src/Makefile,v 1.8 2007/01/17 09:50:42 mmarchi Exp $
 # $Log: Makefile,v $
+# Revision 1.8  2007/01/17 09:50:42  mmarchi
+# *** empty log message ***
+#
 # Revision 1.7  2007/01/16 15:06:01  mmarchi
 # *** empty log message ***
 #
@@ -100,8 +103,9 @@ CURDIR = `pwd`
 DIST_DIR = tmp_dir/orac/source
 LIBRARIES = NONE
 #FFLAGS = -g 
-FFLAGS = -g -fbounds-check 
-#FFLAGS = -O3
+#FFLAGS = -g -fbounds-check 
+#FFLAGS = -g -Mbounds -Mchkstk -Mchkfpstk
+FFLAGS = -O3
 #==========================================================================
 # Define default rules
 #==========================================================================
