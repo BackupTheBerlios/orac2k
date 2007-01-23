@@ -21,8 +21,11 @@
 # ------------------------------------------------------------------/
 # Makefile for 
 # Copyright (C) 2006 Massimo Marchi <marchi@job.saclay.cea.fr>
-# $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/orac2k/Repository/oracDD/src/Makefile,v 1.11 2007/01/22 14:17:15 mmarchi Exp $
+# $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/orac2k/Repository/oracDD/src/Makefile,v 1.12 2007/01/23 16:43:47 mmarchi Exp $
 # $Log: Makefile,v $
+# Revision 1.12  2007/01/23 16:43:47  mmarchi
+# Read from topology/parameter binary file!
+#
 # Revision 1.11  2007/01/22 14:17:15  mmarchi
 # *** empty log message ***
 #
@@ -115,6 +118,7 @@ LIBRARIES = NONE
 #FFLAGS = -g -fbounds-check 
 #FFLAGS = -g -Mbounds -Mchkstk -Mchkfpstk
 FFLAGS = -O3
+#FFLAGS = -O3
 #FFLAGS = -g -C
 #==========================================================================
 # Define default rules
@@ -137,7 +141,7 @@ OBJS = Constants.o Types.o Parameters_Globals.o Errors.o flib.o Node.o Strings.o
 	Numerics.o Units.o PDB.o Setups.o Process.o Hash_Tops.o Tops.o SecondarySeq.o\
 	IndPatch.o AtomCnt.o IndSequence.o ResidueTpg.o  SystemTpg.o TypesPrm.o \
 	SystemPrm.o LennardJones.o PrmUtilities.o BondedPrm.o SimulationBox.o\
-	ReadStore.o AddHydrogens_.o AtomBox.o Neighbors.o oracDD.o 
+	ReadStore.o AddHydrogens_.o AtomBox.o Neighbors.o Utilities.o oracDD.o 
 
 OBJS_f = AddH.o duni.o
 
